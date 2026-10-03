@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Hafizul Ihsan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Hafizul<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Proyek</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="contact.html" class="btn-nav">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Hubungi Saya</h1>
+            <p>Mari diskusikan proyek Anda</p>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <p>Saya terbuka untuk proyek freelance, kolaborasi, atau sekadar berdiskusi tentang teknologi.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:hafizulihsan5@gmail.com" class="contact-item">
+                            <span class="icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <span>hafizulihsan5@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://wa.me/6282391030543" target="_blank" class="contact-item">
+                            <span class="icon">📱</span>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+62 823-9103-0543</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/hfzlihsan" target="_blank" class="contact-item">
+                            <span class="icon">🐙</span>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>github.com/hfzlihsan</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Kirim Pesan</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap *</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" name="subjek">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pesan">Pesan *</label>
+                            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONTAINER -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Form handling sederhana
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda akan segera diproses. (Fitur backend akan ditambahkan nanti)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
